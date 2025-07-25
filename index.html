@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="output">
+        <input type="text" class="text" disabled name="display" placeholder="0" value="" />
+      </div>
+      <div>
+        <input type="button" value="AC" class="operator AC" onclick="ac()"/>
+        <input type="button" value="DEL" class="operator DEL" onclick="del()"/>
+        <input type="button" value="%" class="operator val" onclick="data(this.value)"/>
+        <input type="button" value="/" class="operator val" onclick="data(this.value)"/>
+      </div>
+      <div>
+        <input type="button" value="7" class="val" onclick="data(this.value)"/>
+        <input type="button" value="8" class="val" onclick="data(this.value)"/>
+        <input type="button" value="9" class="val" onclick="data(this.value)"/>
+        <input type="button" value="*" class="operator val" onclick="data(this.value)" />
+      </div>
+      <div>
+        <input type="button" value="4" class="val" onclick="data(this.value)" />
+        <input type="button" value="5" class="val" onclick="data(this.value)" />
+        <input type="button" value="6" class="val" onclick="data(this.value)" />
+        <input type="button" value="-" class="operator val" onclick="data(this.value)" />
+      </div>
+      <div>
+        <input type="button" value="1" class="val" onclick="data(this.value)" />
+        <input type="button" value="2" class="val" onclick="data(this.value)" />
+        <input type="button" value="3" class="val" onclick="data(this.value)" />
+        <input type="button" value="+" class="operator val" onclick="data(this.value)" />
+      </div>
+      <div>
+        <input type="button" value="." class="operator val" onclick="data(this.value)" />
+        <input type="button" value="0" class="val" onclick="data(this.value)" />
+        <input type="button" value="=" class="equal operator" onclick="equal()"/>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
